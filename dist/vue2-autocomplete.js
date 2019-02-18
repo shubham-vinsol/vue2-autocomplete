@@ -437,7 +437,7 @@ if (false) {(function () {
     handleFocus: function handleFocus(e) {
       this.focusList = 0;
       // Callback Event
-      this.onFocus ? this.onFocus(e) : null;
+      this.onFocus ? this.onFocus(e, this) : null;
     },
     mousemove: function mousemove(i) {
       this.focusList = i;
@@ -710,6 +710,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         "click": function($event) {
           $event.preventDefault();
           _vm.selectList(data)
+          _vm.type = ''
         },
         "mousemove": function($event) {
           _vm.mousemove(i)
