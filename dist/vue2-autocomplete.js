@@ -3,7 +3,7 @@
  * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
  * ,
  * ,Vue 2 Autocomplete @ Version 0.2.1,
- * 
+ *
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -390,6 +390,7 @@ if (false) {(function () {
           e.preventDefault();
           this.selectList(this.json[this.focusList]);
           this.showList = false;
+          this.type = '';
           break;
         case ESC:
           this.showList = false;
