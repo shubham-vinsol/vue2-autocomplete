@@ -7,7 +7,8 @@
       label="geometry.location.lat"
       name="autocomplete"
       :customParams="{ token: 'dev' }"
-      :classes="{ input: 'form-control', wrapper: 'input-wrapper'}"
+      :classes="{ input: 'form-control', wrapper: 'input-wrapper', item: 'list-item'}"
+      maxHeight="150px"
       :process="processJSON"
       :onSelect="handleSelect"
     >
