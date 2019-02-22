@@ -16,6 +16,7 @@
   display: inline-block;
   min-width: 15%;
   margin-top: 10px;
+  overflow-y: scroll;
 }
 
 .autocomplete ul:before{
@@ -52,9 +53,9 @@
   font-size: 13px;
 }
 
-.autocomplete ul li a:hover .autocomplete-anchor-label, 
+.autocomplete ul li a:hover .autocomplete-anchor-label,
 .autocomplete ul li.focus-list a span, /*backwards compat*/
-.autocomplete ul li a:hover .autocomplete-anchor-label, 
+.autocomplete ul li a:hover .autocomplete-anchor-label,
 .autocomplete ul li.focus-list a span{ /*backwards compat*/
   color: white;
 }
