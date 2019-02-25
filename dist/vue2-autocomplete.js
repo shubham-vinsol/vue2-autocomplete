@@ -737,7 +737,7 @@ var render = function() {
             }
           ],
           ref: "autocomplete-list",
-          class: _vm.getClassName("list") + " autocomplete autocomplete-list"
+          class: _vm.getClassName('list').includes('manual-list') ? _vm.getClassName('list') + ' autocomplete-list' : _vm.getClassName('list') + ' autocomplete autocomplete-list'
         },
         [
           _c(
