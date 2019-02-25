@@ -393,7 +393,7 @@ return /******/ (function(modules) { // webpackBootstrap
     handleFocus: function handleFocus(e) {
       this.focusList = 0;
       // Callback Event
-      this.onFocus ? this.onFocus(e) : null;
+      this.onFocus ? this.onFocus(e, this) : null;
     },
     mousemove: function mousemove(i) {
       this.focusList = i;
@@ -759,7 +759,8 @@ var render = function() {
                       on: {
                         click: function($event) {
                           $event.preventDefault()
-                          return _vm.selectList(data)
+                          _vm.selectList(data)
+                          _vm.type = ''
                         },
                         mousemove: function($event) {
                           return _vm.mousemove(i)
