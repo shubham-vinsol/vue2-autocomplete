@@ -180,7 +180,7 @@ export default {
 
     // Netralize Autocomplete
     clearInput() {
-      // this.showList = false;
+      this.showList = false;
       this.type = "";
       this.json = [];
       this.focusList = "";
@@ -244,7 +244,7 @@ export default {
           e.preventDefault();
           this.selectList(this.json[this.focusList]);
           this.type = '';
-          // this.showList = false;
+          this.showList = false;
           break;
         case ESC:
           this.showList = false;
@@ -285,7 +285,7 @@ export default {
       setTimeout(() => {
         // Callback Event
         this.onHide ? this.onHide() : null;
-        // this.showList = false;
+        this.showList = false;
       }, 250);
     },
 
@@ -311,7 +311,7 @@ export default {
       // Put the selected data to type (model)
       this.type = clean[this.anchor];
       // Hide List
-      // this.showList = false;
+      this.showList = false;
       // Callback Event
       this.onSelect ? this.onSelect(clean) : null;
     },

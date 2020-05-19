@@ -3,7 +3,7 @@
  * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
  * ,
  * ,Vue 2 Autocomplete @ Version 0.2.1,
- * 
+ *
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -278,7 +278,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
     // Netralize Autocomplete
     clearInput: function clearInput() {
-      this.showList = false;
+      // this.showList = false;
       this.type = "";
       this.json = [];
       this.focusList = "";
@@ -345,7 +345,7 @@ return /******/ (function(modules) { // webpackBootstrap
           e.preventDefault();
           this.selectList(this.json[this.focusList]);
           this.type = '';
-          this.showList = false;
+          // this.showList = false;
           break;
         case ESC:
           this.showList = false;
@@ -387,7 +387,7 @@ return /******/ (function(modules) { // webpackBootstrap
       setTimeout(function () {
         // Callback Event
         _this2.onHide ? _this2.onHide() : null;
-        _this2.showList = false;
+        // _this2.showList = false;
       }, 250);
     },
     handleFocus: function handleFocus(e) {
@@ -409,7 +409,7 @@ return /******/ (function(modules) { // webpackBootstrap
       // Put the selected data to type (model)
       this.type = clean[this.anchor];
       // Hide List
-      this.showList = false;
+      // this.showList = false;
       // Callback Event
       this.onSelect ? this.onSelect(clean) : null;
     },
