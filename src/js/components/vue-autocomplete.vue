@@ -244,7 +244,7 @@ export default {
           e.preventDefault();
           this.selectList(this.json[this.focusList]);
           this.type = '';
-          this.showList = false;
+          // this.showList = false;
           break;
         case ESC:
           this.showList = false;
@@ -311,7 +311,7 @@ export default {
       // Put the selected data to type (model)
       this.type = clean[this.anchor];
       // Hide List
-      this.showList = false;
+      // this.showList = false;
       // Callback Event
       this.onSelect ? this.onSelect(clean) : null;
     },
