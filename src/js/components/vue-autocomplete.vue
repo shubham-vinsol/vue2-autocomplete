@@ -180,7 +180,7 @@ export default {
 
     // Netralize Autocomplete
     clearInput() {
-      this.showList = false;
+      // this.showList = false;
       this.type = "";
       this.json = [];
       this.focusList = "";
@@ -285,7 +285,7 @@ export default {
       setTimeout(() => {
         // Callback Event
         this.onHide ? this.onHide() : null;
-        this.showList = false;
+        // this.showList = false;
       }, 250);
     },
 
